@@ -94,7 +94,7 @@ const [aState, sendB] = useMachine(fetchMachine, {
 
 `actions` -> `services` 로 바뀐다.
 
-[gist link](https://xstate.js.org/viz/?gist=4a2430de75b191b91308859cb340f48a)
+[gist link](https://xstate.js.org/viz/?gist=f13a7dd1f1cd8a1ff2346d328f2a28aa)
 <img src="./Screen Shot 2019-12-14 at 12.01.16 PM.png" />
 
 [gist link](https://xstate.js.org/viz/?gist=4a2430de75b191b91308859cb340f48a)
