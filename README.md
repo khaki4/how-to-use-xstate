@@ -1,5 +1,15 @@
 # XState
 
+> finite state machines have five parts:
+
+- A finite number of states
+- A finite number of events
+- An initial state
+- A transition function that determines the next state given the current state and event
+- A (possibly empty) set of final states
+
+---
+
 ```javascript
 const [peopleMachine, send] = useMachine(fetchMachine, {
     actions: {
@@ -116,4 +126,10 @@ const [aState, sendB] = useMachine(fetchMachine, {
 #### 밀리 모델(Mealy model)
 이 종류의 유한 상태 오토마타는 오직 입력값만을 사용한다. 즉 출력 값은 입력 값과 현재 상태 모두에 의존한다. 밀리 기계는 일반적으로 상태의 수를 줄이는데 사용한다. 앞의 무어 기계와 같은 엘리베이터 문을 예시로 들자면 무어 모델과 달리 중간의 “열리는 중”과 “닫히는 중”의 상태가 없다. 또한 진입 동작이 아니라, 다음과 같이 현재 상태와 입력 값에 모두 영향을 받는 두 종류의 입력 행위가 있다. “만약 문을 열어라 라는 입력 값이 들어온다면 문을 열기 위해 모터를 작동시킨다”와 “만약 문을 닫아라 라는 입력 값이 들어온다면 문을 닫기 위해 모터를 반대 방향으로 작동시킨다”라는 두 입력 행위가 존재한다.
 
+---
+### Parallel State
 
+직교성(Orthogonality)을 가지는 상태 관리
+
+[gist link](https://xstate.js.org/viz/?gist=17b90095e49189b4fe4fbaddaf8feede)
+<img src="./Screen Shot 2019-12-15 at 8.43.54 PM.png" />
