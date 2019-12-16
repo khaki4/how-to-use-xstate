@@ -133,3 +133,9 @@ const [aState, sendB] = useMachine(fetchMachine, {
 
 [gist link](https://xstate.js.org/viz/?gist=17b90095e49189b4fe4fbaddaf8feede)
 <img src="./Screen Shot 2019-12-15 at 8.43.54 PM.png" />
+
+---
+### History
+
+[gist link](https://xstate.js.org/viz/?gist=0be1e082b0a20e58d208a113c810bbac)
+<img src="./Screen Shot 2019-12-16 at 9.47.37 PM.png" />
